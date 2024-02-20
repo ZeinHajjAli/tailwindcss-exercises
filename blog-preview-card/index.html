@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Blog preview card</title>
+
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body class="bg-yellow font-semibold">
+        <!-- Container -->
+        <div class="flex max-w-xs min-h-lvh mx-auto">
+            <div class="relative my-auto">
+                <!-- Shadow -->
+                <div
+                    class="absolute top-2 left-2 inset-shadow rounded-xl bg-black"
+                ></div>
+                <!-- Card -->
+                <div
+                    class="relative group bg-white p-4 rounded-xl z-10 border-black border-2 hover:translate-x-[-0.5rem] hover:translate-y-[-0.5rem] transition-transform transform"
+                >
+                    <img
+                        src="/assets/images/illustration-article.svg"
+                        alt=""
+                        class="rounded-xl mb-4"
+                    />
+
+                    <div>
+                        <p
+                            class="bg-yellow font-extrabold text-xs max-w-fit px-2 py-1 rounded-md my-3"
+                        >
+                            Learning
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="text-xs">Published 21 Dec 2023</p>
+                    </div>
+
+                    <div>
+                        <h1
+                            class="font-extrabold text-lg my-2 group-hover:text-yellow"
+                        >
+                            HTML & CSS foundations
+                        </h1>
+                    </div>
+
+                    <div>
+                        <p class="text-grey text-sm">
+                            These languages are the backbone of every website,
+                            defining structure, content, and presentation.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center mt-6 mb-2">
+                        <img
+                            src="/assets//images/image-avatar.webp"
+                            alt=""
+                            class="max-w-8 mr-2"
+                        />
+                        <p class="font-extrabold text-sm">Greg Hooper</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
