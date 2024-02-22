@@ -16,22 +16,40 @@
 
         <link rel="stylesheet" href="/css/main.css" />
     </head>
-    <body class="text-sm bg-lightPink text-darkPurple">
-        <div class="flex flex-col max-w-md min-h-lvh mx-auto">
-            <div class="bg-white rounded-xl my-auto p-10">
+    <body
+        class="text-sm bg-lightPink text-grayishPurple bg-mobile bg-repeat-x mobile:bg-desktop"
+    >
+        <div class="flex flex-col max-w-lg min-h-lvh mx-auto pb-8 pt-24">
+            <div class="bg-white rounded-xl p-10 my-auto transition mx-10">
                 <div class="flex flex-row">
                     <img
                         src="/assets/images/icon-star.svg"
                         alt=""
                         class="pr-4"
                     />
-                    <h1 class="font-bold text-4xl">FAQs</h1>
+                    <h1 class="font-bold text-4xl text-darkPurple">FAQs</h1>
                 </div>
-                <section>
-                    <h2 class="font-semibold">
-                        What is Frontend Mentor, and how will it help me?
-                    </h2>
-                    <p>
+                <section class="border-b-[1px] border-lightPink py-4">
+                    <div
+                        class="flex flex-row place-content-between group cursor-pointer items-center accordion"
+                    >
+                        <h2
+                            class="font-semibold text-darkPurple group-hover:text-purple"
+                        >
+                            What is Frontend Mentor, and how will it help me?
+                        </h2>
+                        <img
+                            src="/assets/images/icon-minus.svg"
+                            alt=""
+                            class="pl-2 accordionImageMinus hidden"
+                        />
+                        <img
+                            src="/assets/images/icon-plus.svg"
+                            alt=""
+                            class="pl-2 accordionImagePlus"
+                        />
+                    </div>
+                    <p class="accordionText hidden pt-4">
                         Frontend Mentor offers realistic coding challenges to
                         help developers improve their frontend coding skills
                         with projects in HTML, CSS, and JavaScript. It's
@@ -39,31 +57,81 @@
                         building.
                     </p>
                 </section>
-                <section>
-                    <h2 class="font-semibold">Is Frontend Mentor free?</h2>
-                    <p>
+                <section class="border-b-[1px] border-lightPink py-4">
+                    <div
+                        class="flex flex-row place-content-between group cursor-pointer items-center accordion"
+                    >
+                        <h2
+                            class="font-semibold text-darkPurple group-hover:text-purple"
+                        >
+                            Is Frontend Mentor free?
+                        </h2>
+                        <img
+                            src="/assets/images/icon-minus.svg"
+                            alt=""
+                            class="pl-2 accordionImageMinus hidden"
+                        />
+                        <img
+                            src="/assets/images/icon-plus.svg"
+                            alt=""
+                            class="pl-2 accordionImagePlus"
+                        />
+                    </div>
+                    <p class="pt-4 hidden accordionText">
                         Yes, Frontend Mentor offers both free and premium coding
                         challenges, with the free option providing access to a
                         range of projects suitable for all skill levels.
                     </p>
                 </section>
 
-                <section>
-                    <h2 class="font-semibold">
-                        Can I use Frontend Mentor projects in my portfolio?
-                    </h2>
-                    <p>
+                <section class="border-b-[1px] border-lightPink py-4">
+                    <div
+                        class="flex flex-row place-content-between group cursor-pointer items-center accordion"
+                    >
+                        <h2
+                            class="font-semibold text-darkPurple group-hover:text-purple"
+                        >
+                            Can I use Frontend Mentor projects in my portfolio?
+                        </h2>
+                        <img
+                            src="/assets/images/icon-minus.svg"
+                            alt=""
+                            class="pl-2 accordionImageMinus hidden"
+                        />
+                        <img
+                            src="/assets/images/icon-plus.svg"
+                            alt=""
+                            class="pl-2 accordionImagePlus"
+                        />
+                    </div>
+                    <p class="pt-4 hidden accordionText">
                         Yes, you can use projects completed on Frontend Mentor
                         in your portfolio. It's an excellent way to showcase
                         your skills to potential employers!
                     </p>
                 </section>
-                <section>
-                    <h2 class="font-semibold">
-                        How can I get help if I'm stuck on a Frontend Mentor
-                        challenge?
-                    </h2>
-                    <p>
+                <section class="pt-4">
+                    <div
+                        class="flex flex-row place-content-between group cursor-pointer items-center accordion"
+                    >
+                        <h2
+                            class="font-semibold text-darkPurple group-hover:text-purple"
+                        >
+                            How can I get help if I'm stuck on a Frontend Mentor
+                            challenge?
+                        </h2>
+                        <img
+                            src="/assets/images/icon-minus.svg"
+                            alt=""
+                            class="pl-2 accordionImageMinus hidden"
+                        />
+                        <img
+                            src="/assets/images/icon-plus.svg"
+                            alt=""
+                            class="pl-2 accordionImagePlus"
+                        />
+                    </div>
+                    <p class="pt-4 accordionText hidden">
                         The best place to get help is inside Frontend Mentor's
                         Discord community. There's a help channel where you can
                         ask questions and seek support from other community
@@ -72,5 +140,6 @@
                 </section>
             </div>
         </div>
+        <script src="/main.js"></script>
     </body>
 </html>
