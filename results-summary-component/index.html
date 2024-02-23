@@ -15,37 +15,54 @@
         <title>Frontend Mentor | Results summary component</title>
         <link rel="stylesheet" href="/css/main.css" />
     </head>
-    <body class="bg-lightLavender font-medium">
+    <body class="bg-paleBlue font-medium">
         <!-- Card container -->
-        <div
-            class="flex flex-col md:flex-row min-h-lvh md:justify-center items-center"
-        >
-            <div>
+        <div class="flex min-h-lvh justify-center items-center">
+            <div
+                class="flex flex-col md:flex-row bg-white min-h-lvh md:min-h-0 min-w-full md:min-w-0 md:rounded-3xl"
+            >
                 <div
                     id="resultCard"
-                    class="bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue rounded-b-2xl flex flex-col items-center min-w-full md:rounded-2xl md:min-w-0 p-8"
+                    class="bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue rounded-b-3xl flex flex-col items-center min-w-full md:rounded-3xl md:min-w-0 md:max-w-xs py-8 px-16"
                 >
                     <h3 class="text-lightLavender">Your Result</h3>
                     <div
                         id="resultCircle"
-                        class="bg-gradient-to-b from-violetBlue to-persianBlue rounded-full p-4 text-center"
+                        class="bg-gradient-to-b from-violetBlue to-persianBlue rounded-full p-8 text-center my-4"
                     >
-                        <h1 class="text-paleBlue font-extrabold text-4xl">
-                            76
-                        </h1>
-                        <p class="text-lightLavender">of 100</p>
+                        <div class="px-2">
+                            <h1 class="text-paleBlue font-extrabold text-4xl">
+                                76
+                            </h1>
+                            <p class="text-lightLavender">of 100</p>
+                        </div>
                     </div>
-                    <h2>Great</h2>
-                    <p class="">
+                    <h2 class="text-paleBlue">Great</h2>
+                    <p class="text-lightLavender text-center">
                         You scored higher than 65% of the people who have taken
                         these tests.
                     </p>
                 </div>
 
-                <div id="summaryCard" class="bg-white">
-                    <h3>Summary</h3>
+                <div
+                    id="summaryCard"
+                    class="flex flex-col flex-auto p-8 justify-between md:min-w-72"
+                >
+                    <h3 class="text-darkGrayBlue font-bold text-xl">Summary</h3>
 
-                    <div id="reactionScore">Reaction 80 / 100</div>
+                    <div
+                        id="reactionScore"
+                        class="flex flex-row bg-lightRed bg-opacity-15 p-4"
+                    >
+                        <div class="flex flex-row">
+                            <img
+                                src="/assets/images/icon-reaction.svg"
+                                alt=""
+                            />
+                            Reaction
+                        </div>
+                        80 / 100
+                    </div>
 
                     <div id="memoryScore">Memory 92 / 100</div>
 
@@ -53,7 +70,12 @@
 
                     <div id="visualScore">Visual 72 / 100</div>
 
-                    <div id="continueBtn">Continue</div>
+                    <div
+                        id="continueBtn"
+                        class="bg-darkGrayBlue text-paleBlue text-center font-bold text-2xl md:text-sm p-6 md:p-4 rounded-full"
+                    >
+                        Continue
+                    </div>
                 </div>
             </div>
         </div>
