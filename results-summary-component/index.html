@@ -19,11 +19,11 @@
         <!-- Card container -->
         <div class="flex min-h-lvh justify-center items-center">
             <div
-                class="flex flex-col md:flex-row bg-white min-h-lvh md:min-h-0 min-w-full md:min-w-0 md:rounded-3xl"
+                class="flex flex-col sm:flex-row bg-white min-h-lvh sm:min-h-0 min-w-full sm:min-w-0 sm:rounded-3xl sm:shadow-2xl"
             >
                 <div
                     id="resultCard"
-                    class="bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue rounded-b-3xl flex flex-col items-center min-w-full md:rounded-3xl md:min-w-0 md:max-w-xs py-8 px-16"
+                    class="bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue rounded-b-3xl flex flex-col items-center justify-center min-w-full sm:rounded-3xl sm:min-w-0 sm:max-w-xs py-8 px-16 shadow-lg"
                 >
                     <h3 class="text-lightLavender">Your Result</h3>
                     <div
@@ -46,33 +46,85 @@
 
                 <div
                     id="summaryCard"
-                    class="flex flex-col flex-auto p-8 justify-between md:min-w-72"
+                    class="flex flex-col flex-auto p-8 justify-between sm:min-w-72"
                 >
                     <h3 class="text-darkGrayBlue font-bold text-xl">Summary</h3>
 
                     <div
                         id="reactionScore"
-                        class="flex flex-row bg-lightRed bg-opacity-15 p-4"
+                        class="flex flex-row bg-lightRed bg-opacity-15 px-6 py-4 justify-between rounded-xl my-2 flex-grow items-center"
                     >
                         <div class="flex flex-row">
                             <img
                                 src="/assets/images/icon-reaction.svg"
                                 alt=""
+                                class="pr-2"
                             />
-                            Reaction
+                            <p class="font-bold text-lightRed">Reaction</p>
                         </div>
-                        80 / 100
+                        <div class="flex flex-row">
+                            <p class="font-bold pr-1">80</p>
+                            <p>/100</p>
+                        </div>
                     </div>
 
-                    <div id="memoryScore">Memory 92 / 100</div>
+                    <div
+                        id="memoryScore"
+                        class="flex flex-row bg-orangeyYellow bg-opacity-15 px-6 py-4 justify-between rounded-xl my-2 flex-grow items-center"
+                    >
+                        <div class="flex flex-row">
+                            <img
+                                src="/assets/images/icon-memory.svg"
+                                alt=""
+                                class="pr-2"
+                            />
+                            <p class="font-bold text-orangeyYellow">Memory</p>
+                        </div>
+                        <div class="flex flex-row">
+                            <p class="font-bold pr-1">92</p>
+                            <p>/100</p>
+                        </div>
+                    </div>
 
-                    <div id="verbalScore">Verbal 61 / 100</div>
+                    <div
+                        id="verbalScore"
+                        class="flex flex-row bg-greenTeal bg-opacity-15 px-6 py-4 justify-between rounded-xl my-2 flex-grow items-center"
+                    >
+                        <div class="flex flex-row">
+                            <img
+                                src="/assets/images/icon-verbal.svg"
+                                alt=""
+                                class="pr-2"
+                            />
+                            <p class="font-bold text-greenTeal">Verbal</p>
+                        </div>
+                        <div class="flex flex-row">
+                            <p class="font-bold pr-1">61</p>
+                            <p>/100</p>
+                        </div>
+                    </div>
 
-                    <div id="visualScore">Visual 72 / 100</div>
+                    <div
+                        id="visualScore"
+                        class="flex flex-row bg-cobaltBlue bg-opacity-15 px-6 py-4 justify-between rounded-xl my-2 flex-grow items-center"
+                    >
+                        <div class="flex flex-row">
+                            <img
+                                src="/assets/images/icon-visual.svg"
+                                alt=""
+                                class="pr-2"
+                            />
+                            <p class="font-bold text-cobaltBlue">Visual</p>
+                        </div>
+                        <div class="flex flex-row">
+                            <p class="font-bold pr-1">72</p>
+                            <p>/100</p>
+                        </div>
+                    </div>
 
                     <div
                         id="continueBtn"
-                        class="bg-darkGrayBlue text-paleBlue text-center font-bold text-2xl md:text-sm p-6 md:p-4 rounded-full"
+                        class="bg-darkGrayBlue text-paleBlue text-center font-bold text-2xl sm:text-sm p-6 sm:p-4 rounded-full my-2 transition ease-in-out delay-150 hover:bg-gradient-to-b hover:from-lightSlateBlue hover:to-lightRoyalBlue duration-300"
                     >
                         Continue
                     </div>
